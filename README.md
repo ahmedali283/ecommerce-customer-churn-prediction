@@ -15,11 +15,10 @@ Predict churn for 50k e-commerce customers using behavioral, transactional, and 
 flowchart LR
     A[Raw CSV] --> B[Preprocessing\nimpute, cap outliers, engineer 7 features]
     B --> C[Encoding + Scaling]
-    C --> D[Train/Test Split (stratified)]
-    D --> E[EDA: churn profile, bivariate analysis, correlations]
+    C --> E[EDA: churn profile, bivariate analysis, correlations]
     D --> F[Model Zoo: LR, RF, XGBoost, LightGBM, GB, MLP + SMOTE]
-    F --> G[Tuning + Feature Importance]
-    G --> H[Best model saved as pickle + comparison reports]
+    E --> G[Tuning + Feature Importance]
+    F --> H[Best model saved as pickle + comparison reports]
 ```
 
 ## Project Structure
